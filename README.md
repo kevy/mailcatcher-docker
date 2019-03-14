@@ -22,7 +22,7 @@ Add the following to your service block of `docker-compose.yaml`:
 ```bash
 mail:
   container_name: kemp_mail
-  image: github.com/kevy/mailcatcher-docker
+  build: github.com/kevy/mailcatcher-docker
   ports:
     - "${port}:1080"
 ```
